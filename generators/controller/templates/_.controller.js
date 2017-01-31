@@ -1,9 +1,9 @@
-class <%= name %>Ctrl {
+class <%= name %>Controller {
 
 }
 
 export const <%= name %>Page = {
   template: require('./<%= nameDash %>.html'),
-  controller: <%= name %>Ctrl,
+  controller: <%= name %>Controller,
   controllerAs: 'vm'
 };

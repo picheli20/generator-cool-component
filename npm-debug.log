@@ -80,10 +80,10 @@
 30 silly publish   license: 'MIT',
 30 silly publish   readme: '# generator-cool-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]\n> Cool features to manage your AngularJS components (rename, generate, etc...)\n\n## Installation\n\nFirst, install [Yeoman](http://yeoman.io) and generator-cool-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).\n\n```bash\nnpm install -g yo\nnpm install -g generator-cool-component\n```\n\nThen generate your new project:\n\n```bash\nyo cool-component\n```\n\n## Getting To Know Yeoman\n\n * Yeoman has a heart of gold.\n * Yeoman is a person with feelings and opinions, but is very easy to work with.\n * Yeoman can be too opinionated at times but is easily convinced not to be.\n * Feel free to [learn more about Yeoman](http://yeoman.io/).\n\n## License\n\nMIT © [Fabio Picheli]()\n\n\n[npm-image]: https://badge.fury.io/js/generator-cool-component.svg\n[npm-url]: https://npmjs.org/package/generator-cool-component\n[travis-image]: https://travis-ci.org/picheli20/generator-cool-component.svg?branch=master\n[travis-url]: https://travis-ci.org/picheli20/generator-cool-component\n[daviddm-image]: https://david-dm.org/picheli20/generator-cool-component.svg?theme=shields.io\n[daviddm-url]: https://david-dm.org/picheli20/generator-cool-component\n[coveralls-image]: https://coveralls.io/repos/picheli20/generator-cool-component/badge.svg\n[coveralls-url]: https://coveralls.io/r/picheli20/generator-cool-component\n',
 30 silly publish   readmeFilename: 'README.md',
-30 silly publish   gitHead: '89e864551b136df5dad687ad2298f64577e36d8d',
+30 silly publish   gitHead: '0bb3658649643f2e79aca7f4334e630bef5e9509',
 30 silly publish   bugs: { url: 'https://github.com/picheli20/generator-cool-component/issues' },
 30 silly publish   _id: 'generator-cool-component@0.0.3',
-30 silly publish   _shasum: '8d225daf221fe061671ef837bb3eec01b764634d',
+30 silly publish   _shasum: '5b31aaaa5d986738347cf67eebd1ed003e1af781',
 30 silly publish   _from: '.' }
 31 info lifecycle generator-cool-component@0.0.3~prepublishOnly: generator-cool-component@0.0.3
 32 silly lifecycle generator-cool-component@0.0.3~prepublishOnly: no script for prepublishOnly, continuing
@@ -104,22 +104,22 @@
 40 silly publish uploading C:\Users\fopl\AppData\Roaming\npm-cache\generator-cool-component\0.0.3\package.tgz
 41 verbose request uri https://registry.npmjs.org/generator-cool-component
 42 verbose request sending authorization for write operation
-43 info attempt registry request try #1 at 14:45:11
+43 info attempt registry request try #1 at 15:04:51
 44 verbose request using bearer token for auth
-45 verbose request id 57329d211f59948c
+45 verbose request id 4020e79ff1a8d9c2
 46 http request PUT https://registry.npmjs.org/generator-cool-component
 47 http 403 https://registry.npmjs.org/generator-cool-component
 48 verbose headers { 'content-type': 'application/json',
 48 verbose headers   'cache-control': 'max-age=300',
 48 verbose headers   'content-length': '95',
 48 verbose headers   'accept-ranges': 'bytes',
-48 verbose headers   date: 'Tue, 31 Jan 2017 16:45:09 GMT',
+48 verbose headers   date: 'Tue, 31 Jan 2017 17:04:49 GMT',
 48 verbose headers   via: '1.1 varnish',
 48 verbose headers   connection: 'keep-alive',
-48 verbose headers   'x-served-by': 'cache-gru7127-GRU',
+48 verbose headers   'x-served-by': 'cache-gru7125-GRU',
 48 verbose headers   'x-cache': 'MISS',
 48 verbose headers   'x-cache-hits': '0',
-48 verbose headers   'x-timer': 'S1485881108.366174,VS0,VE1000',
+48 verbose headers   'x-timer': 'S1485882288.623792,VS0,VE1065',
 48 verbose headers   vary: 'Accept-Encoding' }
 49 verbose request invalidating C:\Users\fopl\AppData\Roaming\npm-cache\registry.npmjs.org\generator-cool-component on PUT
 50 error publish Failed PUT 403
