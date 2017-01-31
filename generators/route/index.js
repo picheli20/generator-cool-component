@@ -43,21 +43,30 @@ module.exports = Generator.extend({
     }
 
     if(this.props.routeType === 'views'){
-      this.fs.copyTpl(
-        this.templatePath(this.props.routeType + '/tabs/anexo.html'),
-        this.destinationPath(this.props.nameDash + '/tabs/anexo.html'),
-        this.props
-      );
-      this.fs.copyTpl(
-        this.templatePath(this.props.routeType + '/tabs/dados.html'),
-        this.destinationPath(this.props.nameDash + '/tabs/dados.html'),
-        this.props
-      );
-      this.fs.copyTpl(
-        this.templatePath(this.props.routeType + '/tabs/historico.html'),
-        this.destinationPath(this.props.nameDash + '/tabs/historico.html'),
-        this.props
-      );
+      var paths = [
+        {
+          'templates' : this.props.routeType + '/tabs/anexo.html',
+          'destination' : this.props.nameDash + '/tabs/anexo.html'
+        },
+        {
+          'templates' : this.props.routeType + '/tabs/dados.html',
+          'destination' : this.props.nameDash + '/tabs/dados.html'
+        },
+        {
+          'templates' : this.props.routeType + '/tabs/historico.html',
+          'destination' : this.props.nameDash + '/tabs/historico.html'
+        }
+      ];
+
+      var self = this;
+
+      paths.map(function(item) {
+        self.fs.copyTpl(
+          self.templatePath(item.templates),
+          self.destinationPath(item.destination),
+          self.props
+        );
+      })
     }
   },
 
