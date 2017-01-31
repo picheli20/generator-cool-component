@@ -2,36 +2,55 @@
 var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var path = require('path');
 
 module.exports = Generator.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the outstanding ' + chalk.red('generator-cool-component') + ' generator!'
+      'Welcome to the outstanding ' + chalk.green('cool-component') + ' generator!'
     ));
 
-    var prompts = [{
+    this.log(chalk.red('We are under development!'))
+
+    var prompts = [
+    {
+      type: 'list',
+      name: 'action',
+      message: 'What do you want to do?',
+      choices: [{
+        name: 'Create new component',
+        value: 'new'
+      }/* , 
+      {
+        name: 'Rename',
+        value: 'rename'
+      }, {
+        name: 'Move',
+        value: 'move'
+      }*/
+      ]
+    }, {
       type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
+      name: 'path',
+      message: 'The component is in this folder? (' + path.basename(this.env.cwd) + ')',
       default: true
     }];
 
     return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
+      if(props.path){
+        props.path = path.basename(this.env.cwd);
+      }
+
       this.props = props;
-      console.log(props);
     }.bind(this));
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    this.composeWith('cool-component:component', this.props);
   },
 
   install: function () {
-    this.installDependencies();
+    // this.installDependencies();
   }
 });

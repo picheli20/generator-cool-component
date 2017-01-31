@@ -1,0 +1,16 @@
+<div class="<%= nameDash %>-content">
+  <app-title label="<<Titulo>>">
+    Conteudo
+  </app-title>
+  <uib-tabset active="active" class="tabset">
+    <uib-tab index="0" heading="Dados">
+      <div ui-view="dados"></div>
+    </uib-tab>
+    <uib-tab index="1" heading="Anexo">
+      <div ui-view="anexo"></div>
+    </uib-tab>
+    <uib-tab index="2" heading="Histórico">
+      <div ui-view="historico"></div>
+    </uib-tab>
+  </uib-tabset>
+</div>
