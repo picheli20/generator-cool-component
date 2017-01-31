@@ -1,7 +1,7 @@
 export const <%= name %>Route = {
   url: '/<%= nameDash %>',
   parent: 'menu',
-  label: 'Abrir Solicitação',
+  label: '<%= viewLabel %>',
   views: {
     '': {
       component: '<%= name %>'

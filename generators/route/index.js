@@ -18,6 +18,14 @@ module.exports = Generator.extend({
         name: 'none',
         value: 'none'
       }]
+    },
+    {
+      when: function (response) {
+        return response.routeType === 'views';
+      },
+      type: 'name',
+      name: 'viewLabel',
+      message: 'What is the route label?'
     }];
 
     return this.prompt(prompts).then(function (props) {
