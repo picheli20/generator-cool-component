@@ -32,7 +32,7 @@ module.exports = Generator.extend({
     if(this.props.cssExtention !== 'none'){
       this.fs.copyTpl(
         this.templatePath('_.style.' + this.props.cssExtention),
-        this.destinationPath(this.props.prefix + '.style.' + this.props.cssExtention),
+        this.destinationPath(this.props.prefix + '.' + this.props.cssExtention),
         this.props
       );
     }

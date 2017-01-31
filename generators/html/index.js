@@ -20,7 +20,7 @@ module.exports = Generator.extend({
     if(this.props.typeHtml){
       this.fs.copyTpl(
         this.templatePath('_.template.html'),
-        this.destinationPath(this.props.prefix + '.template.html'),
+        this.destinationPath(this.props.prefix + '.html'),
         this.props
       );
     }
