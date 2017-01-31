@@ -40,7 +40,7 @@ module.exports = Generator.extend({
     this.composeWith('cool-component:css', this.props);
     this.composeWith('cool-component:html', this.props);
     this.composeWith('cool-component:route', this.props);
-    this.composeWith('cool-component:inject', this.props);
+    // this.composeWith('cool-component:inject', this.props);
   },
 
   install: function () {
