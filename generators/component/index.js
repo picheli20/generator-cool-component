@@ -32,8 +32,8 @@ module.exports = Generator.extend({
     }];
 
     return this.prompt(prompts).then(function (props) {
-      props.nameDash = props.name.toDash();
       props.nameFirstUpper = props.name.capitalizeFirstLetter();
+      props.nameDash = props.name.toDash();
       props.prefix = props.nameDash + '/' + props.nameDash;
       this.props = _.extend(props, this.options);
     }.bind(this));
