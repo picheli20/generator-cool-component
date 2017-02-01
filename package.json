@@ -1,6 +1,6 @@
 {
   "name": "generator-cool-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cool features to manage your AngularJS components (rename, generate, etc...)",
   "homepage": "https://github.com/picheli20/generator-cool-component",
   "author": {
