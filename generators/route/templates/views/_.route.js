@@ -6,13 +6,13 @@ export const <%= name %>Route = {
     '': {
       component: '<%= name %>'
     },
-    'dados@<%= name %>': {
+    'dados@<%= nameDash %>': {
       template: require('./tabs/dados.html')
     },
-    'anexo@<%= name %>': {
+    'anexo@<%= nameDash %>': {
       template: require('./tabs/anexo.html')
     },
-    'historico@<%= name %>': {
+    'historico@<%= nameDash %>': {
       template: require('./tabs/historico.html')
     }
   },
