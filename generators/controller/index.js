@@ -52,7 +52,7 @@ module.exports = Generator.extend({
         this.props
       );
 
-      if(this.props.generatedType !== 'controller'){
+      if(this.props.generatedType === 'controller'){
         this.composeWith('cool-component:route', this.props);
       }
     }
