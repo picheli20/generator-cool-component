@@ -12,20 +12,7 @@ String.prototype.capitalizeFirstLetter = function() {
 
 module.exports = Generator.extend({
   prompting: function () {
-    var prompts = [
-    {
-      type: 'list',
-      name: 'componentType',
-      message: 'Which component do you want create?',
-      choices: [{
-        name: 'Controller',
-        value: 'controller'
-      }, {
-        name: 'Service',
-        value: 'service'
-      }]
-    },
-    {
+    var prompts = [{
       type: 'name',
       name: 'name',
       message: 'What is the component name? (Ex.: testingApp will be testing-app.XXX.js)',
@@ -40,10 +27,9 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
-    this.composeWith('cool-component:' + this.props.componentType, this.props);
+    this.composeWith('cool-component:controller', this.props);
     this.composeWith('cool-component:css', this.props);
     this.composeWith('cool-component:html', this.props);
-    this.composeWith('cool-component:route', this.props);
     // this.composeWith('cool-component:inject', this.props);
   },
 
